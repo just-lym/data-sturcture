@@ -1,2 +1,2 @@
-# data-sturcture
-this is a data sturcture project
+# data-structure
+this is a data structure project
