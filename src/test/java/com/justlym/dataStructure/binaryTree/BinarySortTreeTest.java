@@ -1,4 +1,4 @@
-package com.justlym.dataStructure.binaryTree.binarySortTree;
+package com.justlym.dataStructure.binaryTree;
 
 import org.junit.Test;
 
