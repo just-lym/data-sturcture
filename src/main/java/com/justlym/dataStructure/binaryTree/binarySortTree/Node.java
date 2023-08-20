@@ -25,6 +25,19 @@ public class Node {
         this.right = right;
     }
 
+    public void pre(Node node) {
+        if (node == null) {
+            return;
+        }
+        System.out.println(node);
+        if (node.right != null) {
+            pre(node.right);
+        }
+        if (node.left != null) {
+            pre(node.left);
+        }
+    }
+
     /**
      * 二叉树使用递归的方式添加节点
      * @param node 要添加的节点
