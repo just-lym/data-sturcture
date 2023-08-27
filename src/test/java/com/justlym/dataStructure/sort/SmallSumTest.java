@@ -10,7 +10,7 @@ public class SmallSumTest {
 
     @Test
     public void testSmallSum() {
-        int[] arr = {1,4,3,7,8};
+        int[] arr = {1,3,4,2,5};
         SmallSum smallSum = new SmallSum();
         smallSum.smallSum(arr);
     }

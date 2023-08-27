@@ -26,7 +26,7 @@ public class SmallSum {
         int rp = mid + 1;
         while (lp <= mid && rp <= r) {
             // 左边的比右边小 产生小和
-            smallSum += arr[lp] <= arr[rp] ? (r - rp + 1) * arr[lp]: 0;
+            smallSum += arr[lp] <  arr[rp] ? (r - rp + 1) * arr[lp]: 0;
             help[i++] = arr[lp] <= arr[rp] ? arr[lp++] : arr[rp++];
         }
         while (lp <= mid) {
@@ -35,9 +35,7 @@ public class SmallSum {
         while (rp <= r) {
             help[i++] = arr[rp++];
         }
-        for (int j = 0; j < help.length; j++) {
-            arr[l + j] = help[j];
-        }
+        System.arraycopy(help, 0, arr, l, help.length);
         return smallSum;
     }
 }
